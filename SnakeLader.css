@@ -1,0 +1,257 @@
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    width: 85px;
+    
+}
+
+.Buttons{
+
+  background-color: red;
+  height: 35px;
+  border-radius: 10px;
+  width: 60px;
+  cursor: pointer;
+  position: relative;
+  bottom: 10px;
+  color: white;
+  font-size: large;
+
+  z-index: 999;
+
+}
+
+.Buttons:focus{
+  background-color: blue;
+}
+
+.Buttons:hover{
+
+  background-color: rgb(0, 255, 136);
+  color: black;
+
+}
+
+
+div{
+    font-size: larger;
+}
+.Total{
+    display: flex;
+    justify-content: center;
+
+    right: 0%;
+}
+.Container,.Container1{
+    display: flex;
+    justify-content: center;
+}
+
+.Dice{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+.DiceNumber1,.DiceNumber2{
+    border: 1px solid;
+    padding: 5px;
+    position: relative;
+    bottom: 10px;
+}
+#Main{
+   
+   
+    background-color: blue;
+    width: 850px;
+    height: 850px;
+
+    background-image: url("SnakeLaderImage.jpg");
+    /* https://miro.medium.com/v2/resize:fit:640/format:webp/0*c9bXWasx-R2aDVHV.jpg"); */
+    /* https://media.istockphoto.com/id/531466314/vector/snakes-and-ladders.jpg?s=2048x2048&w=is&k=20&c=buWMCDue-gmcM97CLL0Cb5w5Qs31koIr9oO2RHrX2qY="); */
+    
+    background-size: cover;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .container {
+    width: 100px;
+    height: 100px;
+
+    /* position: absolute; */
+
+    position: absolute;
+    top:45%;
+    right: 45%;
+
+  }
+  
+  .dice {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+
+    transform: rotateX(30deg)  rotateY(30deg)  rotateZ(-10deg);
+    
+
+
+    /* animation: rollDice 0.5s infinite linear; */
+
+    animation-duration: ;
+  }
+  
+  .face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    
+    font-size: 48px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid;
+
+    border-radius: 7px;
+
+    /* box-shadow: rgba(0, 0, 0, 0.95) 0 4px 5px; */
+
+  }
+  
+  .front {
+    transform: translateZ(-100px) rotateY(180deg);
+    background-color: white;
+  }
+  
+  .back {
+    transform: translateZ(0px) rotateY(0deg);
+    background-color: #00ffff;
+  }
+  
+  .top {
+    transform: translateY(50px) translateZ(-50px) rotateX(-90deg);
+    background-color: #ff00ff;
+  }
+  
+  .bottom {
+    transform: translateZ(-50px) translateY(-50px) rotateX(90deg);
+    background-color: #ffff00;
+  }
+  
+  .left {
+    transform: translateZ(-50px) translateX(-50px) rotateY(-90deg);
+    background-color: #ff0000;
+  }
+  
+  .right {
+    transform: translateZ(-50px)  translateX(50px)  rotateY(90deg) rotateZ(180deg);
+    background-color: #00ff00;
+  }
+  
+  @keyframes rollDice {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;
+    }
+
+    100% {
+      transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg) ;
+    }
+  }
+
+
+
+
+  .Click
+  {
+        position: relative;
+        top:-400px;
+  }
+
+
+
+  @media only screen and (max-width:360px) {
+
+    html{
+      background-color: #ffff00;
+    }
+    .container{
+
+      scale:0.45;
+
+    }
+
+      
+  .container {
+    width: 100px;
+    height: 100px;
+
+    /* position: absolute; */
+
+    position: absolute;
+    top:10%;
+    right: 35%;
+
+  }
+
+    .Total{
+      height: 100vh;
+      width: 360px;
+      position: absolute;
+
+      
+      
+    
+    }
+    #Main{
+      scale: 0.35;
+
+      position: absolute;
+
+      bottom: -110px;
+      
+
+
+
+    }
+    .Dice{
+      position: absolute;
+      bottom: 30px;
+      width: 360px;
+    
+     
+    }
+    
+  }
+  
